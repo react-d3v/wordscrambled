@@ -83,7 +83,7 @@ startButton.addEventListener("click", () => {
 
 // Submit answer script
 submitButton.addEventListener("click", () => {
-  if (gameInput.value === newWord) {
+  if (gameInput.value.toLowerCase() === newWord) {
     !play;
     gameDisplay.innerHTML = "Hurray! correct answer.";
     buttonGroup.style.display = "none";
