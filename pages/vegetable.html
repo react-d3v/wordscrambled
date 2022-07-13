@@ -71,7 +71,7 @@
       <!-- Main Section Starts -->
       <main class="d-flex justify-content-center align-items-center">
         <div class="row w-100">
-          <div class="col-xl-8 col-12">
+          <div class="col-xl-8 col-12 order-2 order-xl-1">
             <div
               class="game-area d-flex justify-content-center align-items-center"
             >
@@ -79,7 +79,7 @@
                 <div
                   class="game-area-inner d-flex justify-content-center align-items-center flex-column"
                 >
-                  <h1 id="gameDisplay">
+                  <h1 id="gameDisplay" class="text-center">
                     press the start button to play the game and earn point.
                   </h1>
                   <input type="text" id="gameInput" placeholder="game input" />
@@ -98,16 +98,14 @@
               </div>
             </div>
           </div>
-          <div
-            class="col-xl-4 col-12 d-flex justify-content-center align-items-center"
-          >
+          <div class="col-xl-4 col-12 order-1 order-xl-2">
             <div class="user-stats">
               <div class="user-img">
                 <ion-icon name="person-circle-outline"></ion-icon>
               </div>
-              <h1 class="user-name">user name here</h1>
+              <h1 class="user-name">guest</h1>
               <div class="score-area">
-                score is : <span id="score-value">0</span>
+                score is : <span id="scoreValue">0</span>
               </div>
             </div>
           </div>
