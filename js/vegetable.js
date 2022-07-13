@@ -101,4 +101,6 @@ quitButton.addEventListener("click", () => {
   buttonGroup.style.display = "none";
   startButton.style.display = "inline-flex";
   startButton.innerHTML = "try again";
+  score = 0;
+  scoreValue.innerHTML = score;
 });
