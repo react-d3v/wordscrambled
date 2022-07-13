@@ -1,0 +1,270 @@
+/* Root Variables */
+:root {
+  /* colors */
+  --dark: #0c0c0c;
+  --primary: #4b4bc9;
+  --secondary: #2c2c2c;
+  --light: #fefefe;
+}
+
+/* Text Style */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Default Style */
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  text-transform: capitalize;
+  background-color: var(--dark);
+  color: var(--light);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+/* Common Style */
+.wrapper {
+  padding: 30px;
+}
+.title {
+  margin-bottom: 30px;
+}
+.my-btn-group {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.btn {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  padding: 10px 30px;
+}
+
+/* Page Loader Style */
+.page-loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+.page-loader-inner {
+  border-radius: 50%;
+  -webkit-animation: pageLoader 0.5s ease-in-out infinite alternate;
+  -moz-animation: pageLoader 0.5s ease-in-out infinite alternate;
+  animation: pageLoader 0.5s ease-in-out infinite alternate;
+}
+@keyframes pageLoader {
+  from {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+  }
+  to {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--light);
+  }
+}
+
+/* Header Style */
+.header {
+  padding: 30px 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--dark);
+  z-index: 100;
+}
+.navbrand {
+  font-family: "Pacifico", cursive;
+  font-size: 2.2rem;
+  color: var(--light);
+}
+.navbrand img {
+  width: 40px;
+}
+.nav-menu {
+  gap: 60px;
+}
+.nav-link {
+  color: var(--light);
+  font-size: 1.8rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--primary);
+}
+.dropdown-toggle::after {
+  margin-left: 1rem;
+}
+.dropdown-menu {
+  background-color: var(--secondary);
+  font-size: 1.8rem;
+}
+.dropdown-menu[data-bs-popper] {
+  margin-top: 0;
+}
+.dropdown-menu[data-bs-popper] {
+  left: inherit;
+  right: 0;
+}
+.dropdown-menu .dropdown-item {
+  color: var(--light);
+  padding: 15px 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: var(--dark);
+}
+
+/* Game Options Style */
+main {
+  width: 100%;
+  height: 100vh;
+}
+.game-option-area {
+  margin: 0 80px;
+  width: 100%;
+}
+.game-option {
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  background-color: var(--secondary);
+  color: var(--light);
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.game-option .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.user-img ion-icon {
+  font-size: 2.8rem;
+  padding-left: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.game-option:hover {
+  color: var(--primary);
+}
+.game-option:hover ion-icon {
+  padding-left: 2rem;
+}
+/* Footer Style */
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Game Area */
+.game-area,
+.game-area .wrapper {
+  width: 100%;
+  height: 100%;
+}
+.game-area-inner h1 {
+  padding-bottom: 3rem;
+}
+.game-area-inner input {
+  width: 70%;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 2px solid var(--light);
+  color: var(--light);
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  display: none;
+}
+.game-area-inner input:focus {
+  outline: none;
+}
+#buttonGroup {
+  display: none;
+}
+.user-stats {
+  width: 90%;
+  height: 30rem;
+  text-align: center;
+  background-color: var(--secondary);
+  padding: 30px;
+  border-radius: 30px;
+  margin: auto;
+}
+.user-stats .user-img ion-icon {
+  font-size: 10rem;
+}
+.user-stats .score-area {
+  font-size: 2.2rem;
+  padding-top: 1rem;
+}

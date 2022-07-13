@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Webpage Title -->
+    <title>Scrambled Words | Fruits</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+      <div class="page-loader-inner"></div>
+    </div>
+    <!-- Page Wrapper -->
+    <div class="page-wrapper">
+      <!-- Header Starts -->
+      <header class="header" id="header">
+        <nav class="navbar">
+          <a
+            href="../index.html"
+            class="navbrand d-flex justify-content-center align-items-center gap-3"
+          >
+            <img src="../images/logo.png" alt="logo" />
+            Scrambled Words!
+          </a>
+          <ul
+            class="nav-menu d-flex justify-content-center align-items-center"
+            id="navMenu"
+          >
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >games</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="fruit.html" class="dropdown-item">fruit</a>
+                </li>
+                <li>
+                  <a href="vegetable.html" class="dropdown-item">vegetable</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Header Ends -->
+      <!-- Main Section Starts -->
+      <main class="d-flex justify-content-center align-items-center">
+        <div class="row w-100">
+          <div class="col-xl-8 col-12 order-2 order-xl-1">
+            <div
+              class="game-area d-flex justify-content-center align-items-center"
+            >
+              <div class="wrapper">
+                <div
+                  class="game-area-inner d-flex justify-content-center align-items-center flex-column"
+                >
+                  <h1 id="gameDisplay" class="text-center">
+                    press the start button to play the game and earn point.
+                  </h1>
+                  <input type="text" id="gameInput" placeholder="game input" />
+                  <button class="btn btn-primary" id="startButton">
+                    start game
+                  </button>
+                  <div class="my-btn-group" id="buttonGroup">
+                    <button class="btn btn-success" id="submitButton">
+                      submit answer
+                    </button>
+                    <button class="btn btn-danger" id="quitButton">
+                      quit game
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 order-1 order-xl-2">
+            <div class="user-stats">
+              <div class="user-img">
+                <ion-icon name="person-circle-outline"></ion-icon>
+              </div>
+              <h1 class="user-name">user name here</h1>
+              <div class="score-area">
+                score is : <span id="scoreValue">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Main Section Ends -->
+      <!-- Footer Starts -->
+      <footer class="footer">
+        <p>
+          this is a word scrambled game made with the help of html, css and
+          javascript by <a href="#">nikhil kumar singh</a>.
+        </p>
+      </footer>
+      <!-- Footer Ends -->
+    </div>
+    <!-- Page Wrapper Ends -->
+    <!-- Bootstrap Js -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Ionicons Js -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Custom Js -->
+    <script src="../js/main.js"></script>
+    <script src="../js/fruit.js"></script>
+  </body>
+</html>
